@@ -1,17 +1,25 @@
-function setup() {
-  // Create a canvas as big as the container window
-  createCanvas(windowWidth, windowHeight);
-  textAlign(CENTER, CENTER);
-}
+let name = prompt("What's your name?");
+alert("Nice to meet you, " + name + "!");
 
-function draw() {
-  background(220);
-  textSize(height / 16);
-  text("Assignment[2]", width / 2, height / 2);
-}
+let place = prompt("Where are you from?");
+alert(place + " is a really cool place!");
 
-// This function is called any time the window is resized
-function windowResized() {
-  // Change the canvas size to fit the window
-  resizeCanvas(windowWidth, windowHeight);
-}
+let numInput1 = prompt("How many times have you visited an Asian country?:");
+let num1 = Number(numInput1);
+
+let numInput2 = prompt("How many times have you visited a European country?:");
+let num2 = Number(numInput2);
+
+alert("Let's do some fun math!")
+
+let add = num1+num2;
+alert("If you add " + num1 + " and " + num2 + " you will get " + add);
+
+let multiply = num1*num2;
+alert("If you mulitply " + num1 + " and " + num2 + " you will get " + multiply);
+
+
+let divide = num1/num2;
+alert("If you divide " + num1 + " and " + num2 + " you will get " + divide);
+
+alert("Wow! Those were some cool calculations. Hope you have an amazing day " + "🤩");
